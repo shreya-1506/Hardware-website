@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --header-h: 72px;
+  }
+
+  * {
+    @apply border-steel-200;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-white font-sans text-[15px] leading-relaxed text-steel-700 antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display font-bold tracking-tight text-navy-900;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    @apply bg-safety-500/25 text-navy-900;
+  }
+
+  /* Slimmer, industrial-looking scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-steel-100;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full border-2 border-steel-100 bg-steel-400;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-steel-500;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-10;
+  }
+
+  /* Small uppercase technical label used above section headings */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-safety-600;
+  }
+
+  .eyebrow-light {
+    @apply inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-safety-400;
+  }
+
+  /* Engineering-drawing style rule with a tick at the start */
+  .tech-rule {
+    @apply relative h-px w-full bg-steel-200;
+  }
+  .tech-rule::before {
+    content: "";
+    @apply absolute left-0 top-1/2 h-2 w-2 -translate-y-1/2 bg-safety-500;
+  }
+
+  .focus-ring {
+    @apply outline-none ring-offset-2 focus-visible:ring-2 focus-visible:ring-safety-500;
+  }
+
+  .field {
+    @apply w-full rounded-md border border-steel-300 bg-white px-3.5 py-2.5 text-[15px] text-navy-900 shadow-sm transition
+      placeholder:text-steel-400
+      focus:border-navy-500 focus:outline-none focus:ring-2 focus:ring-navy-500/20
+      disabled:cursor-not-allowed disabled:bg-steel-100;
+  }
+
+  .label {
+    @apply mb-1.5 block text-[13px] font-semibold text-navy-800;
+  }
+
+  .skeleton {
+    @apply relative overflow-hidden bg-steel-200;
+  }
+  .skeleton::after {
+    content: "";
+    @apply absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/60 to-transparent;
+    animation: shimmer 1.6s infinite;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  /* Fades a marquee/scroller out at both edges */
+  .edge-fade {
+    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Pages with their own sticky mobile CTA (product detail) hide the floating
+   bubble on small screens so the two never stack. */
+.has-sticky-cta #floating-wa {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .has-sticky-cta #floating-wa {
+    display: flex;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

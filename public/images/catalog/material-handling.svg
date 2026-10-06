@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Material Handling">
+  
+  <defs>
+    <linearGradient id="bg-materialhandling" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#F4F7FA"/>
+      <stop offset="1" stop-color="#E6ECF3"/>
+    </linearGradient>
+    <pattern id="grid-materialhandling" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#0D1F37" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <pattern id="grid-fine-materialhandling" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M8 0H0V8" fill="none" stroke="#0D1F37" stroke-opacity="0.04" stroke-width="0.6"/>
+    </pattern>
+    <pattern id="hatch-materialhandling" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#2B4C7E" stroke-opacity="0.35" stroke-width="1.4"/>
+    </pattern>
+    <linearGradient id="metal-materialhandling" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9EEF4"/>
+      <stop offset="0.4" stop-color="#C6D0DC"/>
+      <stop offset="0.5" stop-color="#EFF3F7"/>
+      <stop offset="0.62" stop-color="#B9C5D3"/>
+      <stop offset="1" stop-color="#D9E1E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-materialhandling)"/>
+  <rect width="800" height="600" fill="url(#grid-fine-materialhandling)"/>
+  <rect width="800" height="600" fill="url(#grid-materialhandling)"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    
+    <g fill="none" stroke="#0D1F37" stroke-width="8">
+      <path d="M200 150h60v250h300" />
+      <path d="M540 372l34 28-34 28" stroke="#F97008" stroke-width="9"/>
+      <rect x="290" y="220" width="150" height="130" rx="6" fill="url(#hatch-materialhandling)"/>
+      <path d="M290 262h150"/>
+      <circle cx="250" cy="440" r="34" fill="url(#metal-materialhandling)"/>
+      <circle cx="560" cy="440" r="34" fill="url(#metal-materialhandling)"/>
+      <circle cx="250" cy="440" r="11" fill="#0D1F37"/>
+      <circle cx="560" cy="440" r="11" fill="#0D1F37"/>
+      <path d="M170 150h90" stroke="#F97008" stroke-width="10"/>
+    </g>
+  </g>
+  
+  <g>
+    <line x1="24" y1="24" x2="24" y2="54" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="24" y1="24" x2="54" y2="24" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="776" y1="24" x2="776" y2="54" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="776" y1="24" x2="746" y2="24" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="24" y1="576" x2="24" y2="546" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="24" y1="576" x2="54" y2="576" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="776" y1="576" x2="776" y2="546" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="776" y1="576" x2="746" y2="576" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/>
+    <g stroke="#77869A" stroke-width="1.1" stroke-opacity="0.75">
+      <line x1="250" y1="546" x2="550" y2="546"/>
+      <line x1="250" y1="539" x2="250" y2="553"/>
+      <line x1="550" y1="539" x2="550" y2="553"/>
+    </g>
+    <text x="400" y="534" text-anchor="middle" font-family="'Segoe UI',Inter,sans-serif"
+      font-size="15" letter-spacing="3.4" fill="#77869A">MATERIAL HANDLING</text>
+  </g>
+</svg>

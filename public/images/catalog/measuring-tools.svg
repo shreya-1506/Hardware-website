@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Measuring Tools">
+  
+  <defs>
+    <linearGradient id="bg-measuringtools" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#F4F7FA"/>
+      <stop offset="1" stop-color="#E6ECF3"/>
+    </linearGradient>
+    <pattern id="grid-measuringtools" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#0D1F37" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <pattern id="grid-fine-measuringtools" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M8 0H0V8" fill="none" stroke="#0D1F37" stroke-opacity="0.04" stroke-width="0.6"/>
+    </pattern>
+    <pattern id="hatch-measuringtools" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#2B4C7E" stroke-opacity="0.35" stroke-width="1.4"/>
+    </pattern>
+    <linearGradient id="metal-measuringtools" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9EEF4"/>
+      <stop offset="0.4" stop-color="#C6D0DC"/>
+      <stop offset="0.5" stop-color="#EFF3F7"/>
+      <stop offset="0.62" stop-color="#B9C5D3"/>
+      <stop offset="1" stop-color="#D9E1E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-measuringtools)"/>
+  <rect width="800" height="600" fill="url(#grid-fine-measuringtools)"/>
+  <rect width="800" height="600" fill="url(#grid-measuringtools)"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    
+    <g fill="none" stroke="#0D1F37" stroke-width="8">
+      <path d="M150 250h500v70H150z" fill="url(#metal-measuringtools)"/>
+      <g stroke="#0D1F37" stroke-width="5">
+        <line x1="170" y1="250" x2="170" y2="284"/><line x1="194" y1="250" x2="194" y2="268"/><line x1="218" y1="250" x2="218" y2="268"/><line x1="242" y1="250" x2="242" y2="268"/><line x1="266" y1="250" x2="266" y2="268"/><line x1="290" y1="250" x2="290" y2="284"/><line x1="314" y1="250" x2="314" y2="268"/><line x1="338" y1="250" x2="338" y2="268"/><line x1="362" y1="250" x2="362" y2="268"/><line x1="386" y1="250" x2="386" y2="268"/><line x1="410" y1="250" x2="410" y2="284"/><line x1="434" y1="250" x2="434" y2="268"/><line x1="458" y1="250" x2="458" y2="268"/><line x1="482" y1="250" x2="482" y2="268"/><line x1="506" y1="250" x2="506" y2="268"/><line x1="530" y1="250" x2="530" y2="284"/><line x1="554" y1="250" x2="554" y2="268"/><line x1="578" y1="250" x2="578" y2="268"/><line x1="602" y1="250" x2="602" y2="268"/><line x1="626" y1="250" x2="626" y2="268"/><line x1="650" y1="250" x2="650" y2="284"/>
+      </g>
+      <path d="M356 216h84v138h-84z" fill="#F97008" stroke="#0D1F37" opacity="0.92"/>
+      <path d="M398 216v-72M398 354v72" stroke="#2B4C7E" stroke-width="6" stroke-dasharray="12 8"/>
+    </g>
+    <g fill="none" stroke="#0D1F37" stroke-width="7">
+      <circle cx="400" cy="470" r="0.5"/>
+      <path d="M240 470h320M240 462v16M560 462v16" stroke="#77869A" stroke-width="4"/>
+    </g>
+  </g>
+  
+  <g>
+    <line x1="24" y1="24" x2="24" y2="54" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="24" y1="24" x2="54" y2="24" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="776" y1="24" x2="776" y2="54" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="776" y1="24" x2="746" y2="24" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="24" y1="576" x2="24" y2="546" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="24" y1="576" x2="54" y2="576" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="776" y1="576" x2="776" y2="546" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/><line x1="776" y1="576" x2="746" y2="576" stroke="#0D1F37" stroke-opacity="0.35" stroke-width="2"/>
+    <g stroke="#77869A" stroke-width="1.1" stroke-opacity="0.75">
+      <line x1="250" y1="546" x2="550" y2="546"/>
+      <line x1="250" y1="539" x2="250" y2="553"/>
+      <line x1="550" y1="539" x2="550" y2="553"/>
+    </g>
+    <text x="400" y="534" text-anchor="middle" font-family="'Segoe UI',Inter,sans-serif"
+      font-size="15" letter-spacing="3.4" fill="#77869A">MEASURING TOOLS</text>
+  </g>
+</svg>
